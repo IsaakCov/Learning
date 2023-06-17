@@ -2,5 +2,5 @@ let meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "ag
 "noviembre", "diciembre"];
 
 let mesEscogido = prompt();
-mesEscogido = parseInt(mesEscogido)
+mesEscogido = parseInt(mesEscogido);
 console.log(meses[mesEscogido]);
