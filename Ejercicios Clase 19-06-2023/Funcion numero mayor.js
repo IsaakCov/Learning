@@ -7,6 +7,7 @@ function numeroMayor(num1, num2, num3)
     else
     {
         let list = [num1, num2, num3];
-        return Math.max(list);
+        console.log(typeof(num1))
+        return Math.max(...list);
     }
 }
