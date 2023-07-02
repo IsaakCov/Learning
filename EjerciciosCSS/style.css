@@ -1,0 +1,47 @@
+h3
+{
+    color: blue;
+    text-align: center;
+    font-family: Verdana;
+}
+#main
+{
+    background-color: gray;
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+    font-family: Verdana;
+}
+.alert
+{
+    color: #72353D;
+    background-color: #EAD2D5;
+    font-family: Verdana;
+}
+#div1
+{
+    float: left;
+    background-color: aliceblue;
+    font-family: Verdana;
+    padding: 20px;
+    width: 47%;
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    height: 200px;
+    
+}
+#div2
+{   float: right;
+    background-color: antiquewhite;
+    font-family: Verdana;
+    font-family: Verdana;
+    padding: 20px;
+    width: 47%;
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    height: 200px;
+}
