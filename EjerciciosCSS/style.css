@@ -3,6 +3,7 @@ h3
     color: blue;
     text-align: center;
     font-family: Verdana;
+    font-size: 1,5em;
 }
 #main
 {
@@ -11,18 +12,21 @@ h3
     margin: 30px;
     padding: 30px;
     font-family: Verdana;
+    font-size: 1,5em;
 }
 .alert
 {
     color: #72353D;
     background-color: #EAD2D5;
     font-family: Verdana;
+    font-size: 1,5em;
 }
 #div1
 {
     float: left;
     background-color: aliceblue;
     font-family: Verdana;
+    font-size: 1,5em;
     padding: 20px;
     width: 47%;
     border-radius: 50px;
@@ -44,4 +48,5 @@ h3
     border-color: black;
     border-style: solid;
     height: 200px;
+    font-size: 1,5em;
 }
