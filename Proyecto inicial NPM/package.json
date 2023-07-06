@@ -1,0 +1,11 @@
+{
+  "name": "proyecto-inicial-npm",
+  "version": "1.0.0",
+  "description": "Proyecto inicial de npm ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Isaac",
+  "license": "ISC"
+}
