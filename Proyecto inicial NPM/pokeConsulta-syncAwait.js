@@ -1,11 +1,11 @@
 //const axios = require('axios');
 const itemsContainer = document.getElementById("pokemon");
-// https://reqres.in/api/users esta es la api que vamos a consultar con axio
+// https://reqres.in/api/users esta es la api que vamos a consultar con axios
 const getPokes = async () => 
     {
         try 
         {
-            const pokemon = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=10");
+            const pokemon = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=151");
             for(let i = 0; i <= pokemon.data.results.length; i++)
                 addPoke(pokemon.data.results[i], i + 1);
         }
