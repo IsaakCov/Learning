@@ -5,7 +5,7 @@ const mensajeListaUsuarios = ( req, res) => res.send("En esta ruta tendremos la 
 
 const nuevaConsulta = (req, res) => res.send("Nueva ruta consulta");
 
-const userDetail = (req, res) => res.send(req.params);
+const userDetail = (req, res) => res.send(req.params); //objeto
 
 module.exports = {
     emitirMensaje,
