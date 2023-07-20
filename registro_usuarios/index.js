@@ -18,7 +18,7 @@ const port = 3001;
 
 // Rutas para CRUD
 app.post("/create", createUser);
-//app.get("/create"); // Obtener lista de usuarios
+//app.get("/allUsers"); // Obtener lista de usuarios
 //app.get(); // Obtener detalle de un usuario
 //app.put(); // Modificar los datos de algun registro (direccion, numero de telefono)
 //app.delete(); // Borrar fisicamente al usuario
@@ -36,7 +36,7 @@ const database = async () =>
     }
     catch(error)
     {
-        console.log("Algo salio mal en la conexion con la DB", error)
+        console.log("Algo salio mal en la conexion con la DB", error);
     }
 }
 

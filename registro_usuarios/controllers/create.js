@@ -22,4 +22,4 @@ const createUser = async(req, res) =>
         console.log("error", error)
     }
 }
-module.exports = createUser
+module.exports = createUser;

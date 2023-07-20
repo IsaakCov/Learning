@@ -28,5 +28,4 @@ const Usuarios = dataBase.define("Usuarios",
 
 // Comprobar que el modelo se creo correctamente
 console.log(Usuarios === dataBase.models.Usuarios)
-
 module.exports = Usuarios;
