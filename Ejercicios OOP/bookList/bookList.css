@@ -1,0 +1,25 @@
+#body
+{
+    background-color:#b5b5b5;
+}
+
+
+.container-sm
+{
+    border-radius: 50px;
+    background-color:rgb(240, 246, 247);
+}
+
+li
+{
+    margin-left: 10px;
+}
+.d-flex
+{
+    margin-left: 50px;
+}
+
+.container-lg
+{
+    padding: 50px;
+}
