@@ -1,7 +1,8 @@
+
 // Importamos los tipos de datos de sequelize (que modela un sistema SQL) para definir nuestro modelo.
-import {DataTypes} from 'sequelize';
+const {DataTypes} = require('sequelize');
 // Importamos la base de datos para manipularla
-const database = require('../utils/database');
+const database = require('../services/database');
 
 const Usuarios = database.define(
     "Usuarios",
@@ -14,7 +15,7 @@ const Usuarios = database.define(
             unique: true,
             validate:
             {
-                isEmail: true,
+                isEmail: true, 
                 notNull: {
                     msg: 'El correo es obligatorio'
                 }

@@ -1,7 +1,7 @@
 // Importamos los tipos de datos de sequelize (que modela un sistema SQL) para definir nuestro modelo.
 import {DataTypes} from 'sequelize';
 // Importamos la base de datos para manipularla
-const database = require('../utils/database');
+const database = require('../services/database.js');
 
 const FormularioDeConsultas = database.define(
     "FormularioDeConsultas",
@@ -39,6 +39,9 @@ const FormularioDeConsultas = database.define(
             }
         }
 
+    }
+    {
+        
     }
 )
 

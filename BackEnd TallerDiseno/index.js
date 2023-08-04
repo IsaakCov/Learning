@@ -4,6 +4,14 @@ const app = express();
 // Importamos la base de datos para manipularla
 const conn = require('./services/database');
 
+// IMPORTAMOS LOS MODELOS DE TABLAS
+// Modelo de Usuarios
+const usuariosModel = require('./models/usuariosModel');
+
+
+// IMPORTAMOS LOS CONTROLADORES DE LAS RUTAS
+const createUsuario = require('./controllers/createUsuario')
+
 //Formateamos los requests para leerlos, esto analiza el cuerpo de las peticiones entrantes en:
 // Formato JSON
 app.use(express.json());
@@ -19,6 +27,8 @@ const database = async () => {
     try {
         await conn.authenticate();
         console.log('Base de datos conectada')
+        //Generamos la sincronizacion de nuestro modelo con la base de datos (compatibiliza la tabla, si no existe, la crea)
+        await usuariosModel.sync({force: true});
     } 
     catch (error) {
         console.log('Algo salio mal con la conexion', error)
@@ -31,3 +41,8 @@ app.listen(port, () => {
     database();
     console.log("Servidor ejecutandose correctamente");
 })
+
+
+// Enrutamiento
+
+app.post("/createUsuario", createUsuario);
