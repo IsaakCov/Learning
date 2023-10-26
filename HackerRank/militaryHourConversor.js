@@ -42,13 +42,20 @@ function timeConversion(s) {
     // hora, si es AM lo dejamos tal cual, menos si es 12, caso al cual debemos
     //corregir el valor a 00 y si es PM, sumamos 12
     if(format == "AM"){
+        militaryHours = hours;
         if(hours == "12"){
             militaryHours = "00";
         }
+        
     }
     else{
+        
         militaryHours = parseInt(hours);
         militaryHours = militaryHours + 12;
+        if(militaryHours>23)
+        {
+            militaryHours=militaryHours-12;
+        }
         militaryHours = String(militaryHours);
         
     }
